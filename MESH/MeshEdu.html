@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<img src = "meshlogo.jpg" style="width:400px;height:175px;>
+<head>
+    <title>AMC 10/12 PREP</title>
+</head>
+
+<div style = "background-color:#b5dcb3; width:100%">
+    <center>
+        <b><p style="font-family: 'Euphemia UCAS';font-size: 40px;">MESH Education</p></b>
+        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">
+        AMC 10/12 PREP
+        </p>
+    </center>
+</div>
+
+ <div style = "background-color:#aaa; height:200px; width:1000px; float:top; margin:0 auto;">
+     <div><center><h1 style="color:red">Main Menu</h1></center> <br /> <br /> </div>
+         <button type="button" style = "height:100px;width:200px; float:left " onClick = subFuncAL()>ALGEBRA</button>
+         <button type="button" style = "height:100px;width:200px; float:left" onClick = subFuncGE()>GEOMETRY</button>
+         <button type="button" style = "height:100px;width:200px; float:left" onClick = subFuncCP()>COUNTING</button>
+         <button type="button" style = "height:100px;width:200px; float:left" onClick = subFuncNT()>NUMBER THEORY</button>
+         <button type="button" style = "height:100px;width:200px; float:left" onClick = subFuncTest()>Take An End of Lecture Test</button>
+
+ </div>
+
+    <script>
+    function subFuncNT() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+
+        } else {
+            a.style.display = "none";
+        }
+    }
+    function subFuncAL() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (b.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "block";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+        } else {
+            b.style.display = "none";
+        }
+    }
+
+    function subFuncGE() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (c.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+        } else {
+            c.style.display = "none";
+        }
+    }
+    function subFuncCP() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (d.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "block";
+            e.style.display = "none";
+
+        } else {
+            d.style.display = "none";
+        }
+
+
+    }
+    function subFuncTest() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (e.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "block";
+
+        } else {
+            e.style.display = "none";
+        }
+    }
+    </script>
+
+<div id = Alg style = "display:none">
+    <div style = "background-color:#eee; height:600px; width:1000px; float:top; margin:0 auto;" >
+        <h1 style="font-family:Segoe UI;">Algebra</h1>
+        <h>Vieta's formulas:</h>
+        <p> For when quadratic ax<sup>2</sup> + bx + c = (x + r<sub>1</sub>)(x + r<sub>2</sub>) <br />
+            <center>
+            r<sub>1</sub> + r<sub>2</sub> = -b/a <br />
+            r<sub>1</sub> + r<sub>2</sub> = c/a <br />
+            </center>
+            For when cubic ax<sup>3</sup> + bx<sup>2</sup> + cx + d = (x + r<sub>1</sub>)(x + r<sub>2</sub>)(x + r<sub>3</sub>) <br />
+            <center>
+                r<sub>1</sub> + r<sub>2</sub> + r<sub>3</sub> = -b/a <br />
+                r<sub>1</sub>r<sub>2</sub> + r<sub>1</sub>r<sub>3</sub> + r<sub>2</sub>r<sub>3</sub>= c/a <br />
+                r<sub>1</sub>r<sub>2</sub>r<sub>3</sub> = -d/a
+            </center>
+            And so on... <br />
+        <p/>
+        <h>Useful theorems</h><br />
+            Simon's favorite factoring trick:
+            <img src="simon.png" alt="Image N/A" class="center"
+             style="width:400px;height:30px;>
+              <meta name = "viewport" content="width=device-width, initial-scale=1">
+            Quadratic Formula
+            <img src="quad.png" alt="Image N/A" class="center"
+             style="width:400px;height:130px;>
+              <meta name = "viewport" content="width=device-width, initial-scale=1">
+
+        </p>
+
+    </div>
+</div>
+<div id = Geo style = "display:none">
+    <div style = "background-color:#eee; height:1200px; width:1000px; float:top; margin:0 auto;" >
+    <h1 style="font-family:Segoe UI;">Geometry</h1>
+    <h1>Similar Triangles:</h1>
+    <p>Two triangles are similar if and only if two angles are congruent(AA~) or all three corresponding sides have equal ratios(SSS~) or two pairs of corresponding sides have the same ratios and the angle in between the two sides are equal.</p> <br />
+    <h1>Congruent Triangles:</h1>
+    <p> Two triangles are congruent if and only if the ratios discussed in Similar Triangles are the same.</p><br />
+    <h1>Pythagorean theorem:</h1>
+    <p>"For every right triangle the sum of the squares of the legs is equal to the square of the hypotenuse.<br />
+        For example, the two legs of a right triangle are 3 and 4  and the hypotenuse of the right triangle is 5. The sum of 9 (32) and 16 (42) is 25 (52).<br />
+        Trigonometry:<br />
+        Sine: sin A = side opposite of angle/longest side of the triangle<br />
+        Cosine : cos A = side next to the angle (not the longest side)/longest side of the triangle<br />
+        Tangent : tan A = side opposite of angle/side next to the angle (not the longest side)<br />
+        </p> <br />
+    <img src="tri.png" alt="Image N/A" class="center"
+         style="width:400px;height:400px;>
+        <h> Formulas to know </h>
+        <p>"Trigonometric Ratios <br />
+            Sine A: sin A = a/c<br />
+            Cosine A: cos A = b/c<br />
+            Tangent A: tan A = a/b<br />
+            Sine B: sin B = b/c<br />
+            Cosine B: cos B = b/c<br />
+            Tangent B: tan B = b/a<br />
+
+
+           Law of Cosines: c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> - 2ab cos(C) <br />
+
+           Law of Sines: (a / sin A) = (b / sin B) = (c / sin C) <br />
+
+           Stewarts theorem: Let a, b, and c be the lengths of the sides of a triangle. Let d be the length of a cevian to the side of length a If the cevian divides the side of length a into two segments of length m and n with m adjacent to c and n adjacent to b, then Stewart's theorem states that
+           pb2m+c2n = a(d2+mn)"
+        </p>
+
+    </div>
+</div>
+
+<div id = Calc style = "display:none">
+    <div style = "background-color:#eee; height:600px; width:1000px; float:top; margin:0 auto;" >
+        <h1 style="font-family:Segoe UI;">Counting</h1>
+        <p>Basic counting example: How many numbers are between 16 and 25, inclusive?
+        Soln: there are (25 - 16) + 1 = 10 numbers between 16 and 25.
+        Or: How many numbers are between 16 and 25, EXCLUSIVE?t
+            Soln: there are (25 - 16) - 1 = 8 numbers between 16 and 25. To check: (17, 18, 19, 20, 21, 22, 23, 24)</p>
+
+
+        <h1 style="font-family:Segoe UI;">Probability</h1>
+        <p>
+        Probability is defined as number of cases that an event can happen divided by the total number of outcomes. In other words, how likely an event is to happen.<br />
+        Complementary counting is defined as counting what you DON’T want and subtracting it by the total amount of possibilities to get what you DO want.<br />
+        (Example: How many three digit numbers contain the digit "9" at least once?<br />
+        There are 8 x 9 x 9 = 648 numbers that do not contain the digit "9". The answer is 900 - 648 = 252.)<br />
+        Permutation:<br />
+        A combination is a selection of items from a set, in which the order does matter.<br />
+        (nPr) which is n! divided by the quantity of (n-r)!<br />
+        Combination:<br />
+        A combination is a selection of items from a set, in which the order does not matter.<br />
+        (nCr) which is n! divided by the quantity of (n-r)!r!<br />
+        Theorems:<br />
+        Stars and Bars:<br />
+        The number of ways to write n as an (ordered) sum of k positive integers is  n − 1  choose k − 1  .<br />
+        Imagine a line of stone. Then imagine have n number of sticks. To find the total nummber of possible separations of the stones is to<br />
+        to find the number of gaps between the stones choose the number of sticks.
+        </p>
+    </div>
+</div>
+<div id = Num style = "display:none">
+    <div style = "background-color:#eee; height:500px; width:1000px; float:top; margin:0 auto;" >
+        <h1 style="font-family:Segoe UI;">Number Theory</h1>
+       <p>Number theory is the study of the set of Natural Numbers, or Counting Numbers.<br />
+           Primes: Prime numbers are numbers that are only divisible by one and itself. Examples: 2, 3, 5, 7, 11, 13<br />
+           Number bases: Number bases are methods of counting the numbers but with only a certain amount of numbers. Base 10 (Decimal) is our standard counting system, using the numbers 0-9 to represent all numbers.<br /> Example: base two (binary) counts using only 0s and 1s. 1, 10, 11, 100 would be 1, 2, 3, 4 in base 10. Base two is used in computers. Also, base 16 (hexadecimal) counts using numbers 0-9 and letters A-F. 10 in base 10 would be A in base 16 and 15 is F. 16 in base 10 would be 10 in base 16. Hexadecimal is used in mac addresses and color codes (#000000 (black) ~ #FFFFFF (white))<br />
+       </p>
+        <p>
+            <h>Divisibility: Divisibility is seeing if a number is able to divide another number without a remainder. There are various divisibility rules.</h>
+           2: If number ends in 0, 2, 4, 6, 8 then it is divisible by 2.<br />
+           3: Add up the digits, if they add to a multiple of 3, then the number is divisible by 3.<br />
+           4: If the last two digits of the number are divisible by 4, then it is divisible by 4.<br />
+           5: If the number ends in 5 or 0, it is divisible by 5.<br />
+           6: if the number is divisible by 2 and 3, it is divisible by 6.<br />
+           8: If last three digits are divisible by 8, then the number is divisible by 8.<br />
+           9: Similar to 3 (add the digits), but if they add to a multiple of 9, then it is divisible by 9.<br />
+           10: If number ends in 0, it is divisible by 10.<br />
+           11: Add the alternating digits. Then add the other alternating digits. Then if the difference of the sums is 0, it is divisible by 11<br />
+       </p>
+    </div>
+</div>
+<div id = Test style = "display:none">
+    <div style = "background-color:#eee; height:2000px; width:1000px; float:top; margin:0 auto;>
+        <h1 style="font-family:Segoe UI;">Test</h1>
+        <p> 1. A 25 foot ladder is placed against a vertical wall of a building. The foot of the ladder is 7 feet from the base of the building. If the top of the ladder slips 4 feet, then how much will the foot of the ladder slide?(AHSME)"</p>
+
+        <button onclick="myFunction1()">My Answer</button>
+
+        <p id="demo1"></p>
+
+        <script>
+            function myFunction1() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 8) {
+                document.getElementById("demo1").innerHTML =
+                    "Correct! You can move onto the next problem";
+
+                }else{
+                document.getElementById("demo1").innerHTML =
+                    "Incorrect! Try Again. ";
+            }
+            }
+        </script>
+
+        <p>2. What is the remainder when x<sup>51</sup>+51 is divided by x+1
+        </p>
+
+        <button onclick="myFunction2()">My Answer</button>
+
+        <p id="demo2"></p>
+
+        <script>
+            function myFunction2() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 50) {
+                    document.getElementById("demo2").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo2").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+
+        </script>
+
+        <p>3. Point E is the midpoint of side CD in square ABCD and BE meets diagonal AC at F. The area of quadrilateral AFED is 45 What is the area of ABCD?(AMC 8)
+        </p>
+
+
+        <button onclick="myFunction3()">My Answer</button>
+
+        <p id="demo3"></p>
+
+        <script>
+            function myFunction3() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 108) {
+                    document.getElementById("demo3").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo3").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+
+        </script>
+
+        <img src="square.png" alt="Image N/A" class="center"
+             style="width:400px;height:400px;>
+              <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+
+
+        <p>4. After rationalizing the numerator of, (sqrt 3 - sqrt 2) / sqrt 3 what is the denominator in simplest form? (Show square root notation as # + sqrt #) (AHSME 1950, 10)</p>
+
+        <button onclick="myFunction4()">My Answer</button>
+
+        <p id="demo4"></p>
+
+        <script>
+            function myFunction4() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == "3 + sqrt 6") {
+                    document.getElementById("demo4").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo4").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <p>5. In the year 2001,, the United States will host the International Mathematical Olympiad. Let I, M and O be distinct positive integers such that the product I * M * O = 2001. What is the largest possible value of the sum I + M + O? (2000 AMC 12, 1)</p>
+
+        <button onclick="myFunction5()">My Answer</button>
+
+        <p id="demo5"></p>
+
+        <script>
+            function myFunction5() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 671) {
+                    document.getElementById("demo5").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo5").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <body>
+
+        <p>6. Let N be the largest positive integer with the following property: reading from left to right, each pair of consecutive digits of Nforms a perfect square. What are the leftmost three digits of N?(Aime II 2001, 1))</p>
+
+        <button onclick="myFunction6()">My Answer</button>
+
+        <p id="demo6"></p>
+
+        <script>
+            function myFunction6() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 816) {
+                    document.getElementById("demo6").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo6").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <p>7. Evaluate (29 27/28) * (27 14/15) (Mixed numbers) Express your answer as a mixed number (1997 PMWC, I1)
+        </p>
+
+        <button onclick="myFunction7()">My Answer</button>
+
+        <p id="demo7"></p>
+
+        <script>
+            function myFunction7() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == "837 1/420") {
+                    document.getElementById("demo7").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo7").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <p>8. Determine the digit in the 623rd place after the decimal point in the repeating decimal for: 1/9 + 2/99 + 3/999 (1993 UNCO math contest II, 2)
+        </p>
+
+        <button onclick="myFunction8()">My Answer</button>
+
+        <p id="demo8"></p>
+
+        <script>
+            function myFunction8() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == "1") {
+                    document.getElementById("demo8").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo8").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <p> 9. In the figure below AB and CD are perpendicular to BC and the size of angle ACB is 31°. Find the length of segment BD.
+        </p>
+
+        <button onclick="myFunction9()">My Answer</button>
+
+        <p id="demo9"></p>
+
+        <script>
+            function myFunction9() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == "13.4") {
+                    document.getElementById("demo9").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                 	document.getElementById("demo9").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <img src="trig.jpg" alt="Image N/A" class="center"
+             style=width:600px;height:400px;>
+              <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <p>10. The lengths of side AB and side BC of a scalene triangle ABC are 12 cm and 8 cm respectively. The size of angle C is 59°. Find the length of side AC.
+        </p>
+
+        <button onclick="myFunction10()">My Answer</button>
+
+        <p id="demo10"></p>
+
+        <script>
+            function myFunction10() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 14) {
+                    document.getElementById("demo10").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo10").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+
+    </div>
+</div>
+
+
+<div style = "background-color:#b5dcb3; float:bottom; clear:both"; >
+    <center>
+        Copyright © 2019 MESH Education
+    </center>
+
+</div>
+</body>
+
+</html>
